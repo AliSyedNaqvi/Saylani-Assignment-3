@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <title>Movie Recommendation App</title>
+
+    <style type="text/css">
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .first-row {
+            float: left;
+            margin: 2em 5em 1em 4em;
+        }
+
+        .first-row select {
+            width: 300px;
+            padding: 5px 0 5px 0;
+        }
+
+        #second-row {
+            margin: 0 0 0 4em;
+        }
+
+        #second-row select {
+            width: 1187px;
+            padding: 5px 0 5px 0;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Movie Recommendation App</h1>
+    </header>
+
+    <main>
+        <section class="first-row">
+            <label for="genre">GENRE</label><br>
+            <select name="genre" id="genre">
+                <optgroup>
+                    <option value="all">All</option>
+                    <option value="action">Action</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="scifi">Science Fiction</option>
+                    <option value="family">Family</option>
+                </optgroup>
+            </select>
+        </section>
+
+        <section class="first-row">
+            <label for="year">YEAR</label><br>
+            <select name="year" id="year">
+                <optgroup>
+                    <option value="all">All</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                </optgroup>
+            </select>
+        </section>
+
+        <section class="first-row">
+            <label for="language">LANGUAGE</label><br>
+            <select name="language" id="lang">
+                <optgroup>
+                    <option value="all">All</option>
+                    <option value="english">English</option>
+                    <option value="arabic">Arabic</option>
+                </optgroup>
+            </select>
+        </section>
+
+        <section id="second-row">
+            <label for="rating">RATING</label><br>
+            <select name="rating" id="rating">
+                <optgroup>
+                    <option value="all">All</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </optgroup>
+            </select>
+        </section>
+    </main>
+
+</body>
+</html>
